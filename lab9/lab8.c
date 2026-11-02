@@ -6,7 +6,7 @@ void zadanie1(void)
 {
     int ROW = 9, COL = 9;
     int row, col;
-    printf("\n 1.1) Полная таблица Пифагора\n");
+    printf("\n 1.1) РџРѕР»РЅР°СЏ С‚Р°Р±Р»РёС†Р° РџРёС„Р°РіРѕСЂР°\n");
     for (row = 1; row <= ROW; ++row) {
         for (col = 1; col <= COL; ++col) {
             printf("%5d", col * row);
@@ -19,7 +19,7 @@ void zadanie1_2(void)
 {
     int N = 9;
     int row, col;
-    printf("\n 1.2)Левый нижний треугольник таблицы Пифагора\n");
+    printf("\n 1.2)Р›РµРІС‹Р№ РЅРёР¶РЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє С‚Р°Р±Р»РёС†С‹ РџРёС„Р°РіРѕСЂР°\n");
     for (row = 1; row <= N; ++row) {
         for (col = 1; col <= row; ++col) {
             printf("%5d", col * row);
@@ -32,7 +32,7 @@ void zadanie1_3(void)
 {
     int n = 5;
     int i, j;
-    printf("\n 1.3)Вариант 4\n");
+    printf("\n 1.3)Р’Р°СЂРёР°РЅС‚ 4\n");
     for (i = 1; i <= n; i++) {
         for (j = 1; j <= i; j++) {
             printf("5 ");
@@ -46,10 +46,10 @@ void zadanie2(void)
     long long number;
     char choice;
 
-    printf("\n 2) Вариант 4\n");
+    printf("\n 2) Р’Р°СЂРёР°РЅС‚ 4\n");
 
     do {
-        printf("Введите число: ");
+        printf("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ");
         scanf("%lld", &number);
 
         long long temp = number;
@@ -61,12 +61,12 @@ void zadanie2(void)
             temp /= 10;
         }
 
-        printf("Количество цифр больше 5: %d\n", count);
+        printf("РљРѕР»РёС‡РµСЃС‚РІРѕ С†РёС„СЂ Р±РѕР»СЊС€Рµ 5: %d\n", count);
 
         while (getchar() != '\n');
-        printf("Продолжить? (Да - 'y'/'д', Нет - 'n'/'н'): ");
+        printf("РџСЂРѕРґРѕР»Р¶РёС‚СЊ? (Р”Р° - 'y'/'Рґ', РќРµС‚ - 'n'/'РЅ'): ");
         scanf("%c", &choice);
-    } while (choice == 'y' || choice == 'Y' || choice == 'д' || choice == 'Д');
+    } while (choice == 'y' || choice == 'Y' || choice == 'Рґ' || choice == 'Р”');
 }
 
 void zadanie3(void)
@@ -75,13 +75,13 @@ void zadanie3(void)
     int height;
     int choice;
 
-    printf("\n 3) Вариант 4 \n");
+    printf("\n 3) Р’Р°СЂРёР°РЅС‚ 4 \n");
 
     do {
-        printf("Введите символ, из которого будет строиться фигура: ");
+        printf("Р’РІРµРґРёС‚Рµ СЃРёРјРІРѕР», РёР· РєРѕС‚РѕСЂРѕРіРѕ Р±СѓРґРµС‚ СЃС‚СЂРѕРёС‚СЊСЃСЏ С„РёРіСѓСЂР°: ");
         scanf(" %c", &symbol);
 
-        printf("Введите высоту (размер) фигуры: ");
+        printf("Р’РІРµРґРёС‚Рµ РІС‹СЃРѕС‚Сѓ (СЂР°Р·РјРµСЂ) С„РёРіСѓСЂС‹: ");
         scanf("%d", &height);
 
         for (int i = 1; i <= height; i++) {
@@ -91,7 +91,7 @@ void zadanie3(void)
             printf("\n");
         }
 
-        printf("\nПродолжить? (Да - любое число, Нет - 0): ");
+        printf("\nРџСЂРѕРґРѕР»Р¶РёС‚СЊ? (Р”Р° - Р»СЋР±РѕРµ С‡РёСЃР»Рѕ, РќРµС‚ - 0): ");
         scanf("%d", &choice);
     } while (choice != 0);
 }
@@ -105,8 +105,6 @@ int main(void)
     zadanie1_3();
     zadanie2();
     zadanie3();
-
-    return 0;
 
     return 0;
 }
